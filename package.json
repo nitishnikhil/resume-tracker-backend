@@ -1,0 +1,22 @@
+{
+  "name": "resume-tracker-backend-api",
+  "version": "1.0.0",
+  "description": "Resume Tracker with Azure",
+  "main": "app.js",
+
+  "scripts": {
+    "start": "node app.js"
+  },
+
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "@azure/storage-blob": "^12.29.1",
+    "@azure/cosmos": "^4.9.0",
+    "dotenv": "^17.2.3"
+  },
+
+  "engines": {
+    "node": "18.x"
+  }
+}

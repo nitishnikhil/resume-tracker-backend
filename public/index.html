@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Resume Tracker</h1>
+
+    <!-- Upload Form -->
+    <form id="resumeForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="skills" placeholder="Skills (Java, SQL, Azure)" />
+      <input type="file" name="resume" required />
+      <button type="submit">Upload Resume</button>
+    </form>
+
+    <hr />
+
+    <!-- Uploaded Resumes -->
+    <h2>Uploaded Resumes</h2>
+    <ul id="resumeList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
