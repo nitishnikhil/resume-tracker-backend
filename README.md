@@ -43,7 +43,7 @@
     -Multer (file handling)
     -dotenv (environment variables)
 
-Cloud Services (Azure)
+  Cloud Services (Azure)
     -Azure App Service (Linux)
     -Azure Blob Storage
     -Azure Cosmos DB (SQL API)
@@ -53,7 +53,7 @@ Frontend
     -CSS
     -JavaScript
 
-📁 Project Folder Structure
+## 📁 Project Folder Structure
 
  resume-tracker-backend/
 │
@@ -74,7 +74,7 @@ Frontend
 │       ├── blobService.js
 │       └── cosmosService.js
 
-🔗 API Endpoints
+## 🔗 API Endpoints
 ➤ Upload Resume
 
 POST
@@ -111,7 +111,7 @@ Response
     /health
     OK
 
-🔐 Environment Variables
+## 🔐 Environment Variables
      PORT=3000
 
 # Azure Blob Storage
@@ -120,32 +120,35 @@ AZURE_BLOB_CONTAINER=resumes
 
 # Azure Cosmos DB
 COSMOS_ENDPOINT=YOUR_COSMOS_ENDPOINT
+
 COSMOS_KEY=YOUR_COSMOS_KEY
+
 COSMOS_DATABASE=ResumeDB
+
 COSMOS_CONTAINER=Candidates
 
-▶️ How to Run This Project Locally
+## ▶️ How to Run This Project Locally
 Step 1: Install Dependencies
         npm install
 Step 2: Start Server
         npm start
 Server will run at: http://localhost:3000
 
-☁️ Azure Deployment Details
+## ☁️ Azure Deployment Details
        Platform: Azure App Service
        Operating System: Linux
        Node Version: 20
        Startup Command: npm start
        Health Check Path: /health
 
- 🧪 Important Implementation Notes
+ ## 🧪 Important Implementation Notes
           - Multer uses memory storage, so files are not saved on disk
           - Resume files are uploaded directly to Azure Blob Storage
           - Blob container is created automatically if it does not exist
           - Cosmos DB stores candidate metadata along with resume URL
           - Static frontend is served from the public folder
 
-  🔮 Future Enhancements
+  ## 🔮 Future Enhancements
        -Authentication and authorization
        -Resume validation (PDF/DOC)
        -Pagination and search
