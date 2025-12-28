@@ -1,8 +1,8 @@
 ## Resume Tracker Backend (Azure)
-    📌 Project Overview
-         Resume Tracker Backend is a cloud-based backend application developed using Node.js and Express, deployed on Azure App Service (Linux).
-         The application allows users to upload resumes, store resume files in Azure Blob Storage, and save candidate information in Azure Cosmos DB.
-         This project demonstrates real-world cloud integration using Microsoft Azure services.
+    📌Project Overview
+    Resume Tracker Backend is a cloud-based backend application developed using Node.js and Express, deployed on Azure App Service (Linux).
+    The application allows users to upload resumes, store resume files in Azure Blob Storage, and save candidate information in Azure Cosmos DB.
+    This project demonstrates real-world cloud integration using Microsoft Azure services.
 
 ## 🧠 What This Project Does (Simple Explanation)
    
@@ -67,11 +67,11 @@
       │
       ├── src/
       │   ├── routes/
-    │   │   └── resumes.js
-    │   │
-    │   └── services/
-    │       ├── blobService.js
-    │       └── cosmosService.js
+      │   │   └── resumes.js
+      │   │
+      │   └── services/
+      │       ├── blobService.js
+      │       └── cosmosService.js
 
 ## 🔗 API Endpoints
     ➤ Upload Resume
@@ -96,7 +96,7 @@
 ## ➤ Get Uploaded Candidates
       /api/resumes/list
       [
-  {
+    {
   
     "id": "123456789",
     "name": "John Doe",
@@ -104,8 +104,8 @@
     "skills": "Java, SQL, Azure",
     "resumeUrl": "https://blob-url",
     "uploadedAt": "2025-01-01T10:00:00Z"
-  }
-]
+    }
+     ]
 
 ## ➤ Health Check (Azure Requirement)
     /health
@@ -125,35 +125,35 @@
     COSMOS_CONTAINER=Candidates
 
 ## ▶️ How to Run This Project Locally
-     Step 1: Install Dependencies
+    Step 1: Install Dependencies
         npm install
-     Step 2: Start Server
+    Step 2: Start Server
         npm start
     Server will run at: http://localhost:3000
 
 ## ☁️ Azure Deployment Details
-       Platform: Azure App Service
-       Operating System: Linux
-       Node Version: 20
-       Startup Command: npm start
-       Health Check Path: /health
+    Platform: Azure App Service
+    Operating System: Linux
+    Node Version: 20
+    Startup Command: npm start
+    Health Check Path: /health
 
  ## 🧪 Important Implementation Notes
-          - Multer uses memory storage, so files are not saved on disk
-          - Resume files are uploaded directly to Azure Blob Storage
-          - Blob container is created automatically if it does not exist
-          - Cosmos DB stores candidate metadata along with resume URL
-          - Static frontend is served from the public folder
+    -Multer uses memory storage, so files are not saved on disk
+    -Resume files are uploaded directly to Azure Blob Storage
+    -Blob container is created automatically if it does not exist
+    -Cosmos DB stores candidate metadata along with resume URL
+    -Static frontend is served from the public folder
 
   ## 🔮 Future Enhancements
-       -Authentication and authorization
-       -Resume validation (PDF/DOC)
-       -Pagination and search
-       -Admin dashboard
-       -Resume analytics
+    -Authentication and authorization
+    -Resume validation (PDF/DOC)
+    -Pagination and search
+    -Admin dashboard
+    -Resume analytics
 
 ## 👨‍💻 Author
 
-Nitish Kumar
-B.Tech – Information Technology
-Azure | Node.js | Cloud Computing
+    Nitish Kumar
+    B.Tech – Information Technology
+    Azure | Node.js | Cloud Computing
