@@ -1,27 +1,23 @@
 ## Resume Tracker Backend (Azure)
-📌 Project Overview
-    Resume Tracker Backend is a cloud-based backend application developed using Node.js and Express, deployed on Azure App Service (Linux).
-    The application allows users to upload resumes, store resume files in Azure Blob Storage, and save candidate information in Azure Cosmos DB.
-    This project demonstrates real-world cloud integration using Microsoft Azure services.
+    📌 Project Overview
+         Resume Tracker Backend is a cloud-based backend application developed using Node.js and Express, deployed on Azure App Service (Linux).
+         The application allows users to upload resumes, store resume files in Azure Blob Storage, and save candidate information in Azure Cosmos DB.
+         This project demonstrates real-world cloud integration using Microsoft Azure services.
 
 ## 🧠 What This Project Does (Simple Explanation)
    
-  -User uploads a resume through a frontend form
-  
-  -Backend receives the file using Multer
-  
-  -Resume file is uploaded to Azure Blob Storage
-  
-  -Candidate details + resume URL are saved in Azure Cosmos DB
-  
-  -Backend provides APIs to retrieve uploaded candidate data
+    -User uploads a resume through a frontend form
+    -Backend receives the file using Multer
+    -Resume file is uploaded to Azure Blob Storage
+    -Candidate details + resume URL are saved in Azure Cosmos DB
+    -Backend provides APIs to retrieve uploaded candidate data
 
  ## 🏗️ System Architecture
- Frontend (HTML/CSS/JavaScript)
+    Frontend (HTML/CSS/JavaScript)
         |
         |  HTTP Requests
         |
-Node.js Backend (Express)
+    Node.js Backend (Express)
         |
         |---- Upload Resume → Azure Blob Storage
         |
@@ -32,55 +28,50 @@ Node.js Backend (Express)
 
 
 ## Features
-   --Resume upload functionality
-   
-   --Cloud file storage using Azure Blob Storage
-   
-   --Candidate data storage using Azure Cosmos DB
-   
-   --REST APIs for upload and listing resumes
-   
-   --Azure health check endpoint
-   
-   --Deployed on Azure App Service (Linux
+     -Resume upload functionality
+     -Cloud file storage using Azure Blob Storage
+     -Candidate data storage using Azure Cosmos DB
+     -REST APIs for upload and listing resumes
+     -Azure health check endpoint
+     -Deployed on Azure App Service (Linux
 
 ## 🛠️ Tech Stack
-  Backend
-    -Node.js (v20)
-    -Express.js
-    -Multer (file handling)
-    -dotenv (environment variables)
+    Backend
+     -Node.js (v20)
+     -Express.js
+     -Multer (file handling)
+     -dotenv (environment variables)
 
-  Cloud Services (Azure)
+    Cloud Services (Azure)
     -Azure App Service (Linux)
     -Azure Blob Storage
     -Azure Cosmos DB (SQL API)
     
-Frontend
-    -HTML
-    -CSS
-    -JavaScript
+    Frontend
+     -HTML
+     -CSS
+     -JavaScript
 
 ## 📁 Project Folder Structure
 
- resume-tracker-backend/
-│
-├── app.js
-├── package.json
-├── .env
-│
-├── public/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-│
-├── src/
-│   ├── routes/
-│   │   └── resumes.js
-│   │
-│   └── services/
-│       ├── blobService.js
-│       └── cosmosService.js
+    resume-tracker-backend/
+      │
+      ├── app.js
+      ├── package.json
+      ├── .env
+      │
+      ├── public/
+      │   ├── index.html
+      │   ├── style.css
+      │   └── app.js
+      │
+      ├── src/
+      │   ├── routes/
+    │   │   └── resumes.js
+    │   │
+    │   └── services/
+    │       ├── blobService.js
+    │       └── cosmosService.js
 
 ## 🔗 API Endpoints
     ➤ Upload Resume
@@ -96,7 +87,7 @@ Frontend
     -skills
      -resume (file)
 
-Response
+    Response
      {
         "message": "Resume uploaded successfully",
         "url": "https://<azure-blob-url>"
