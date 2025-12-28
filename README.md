@@ -83,18 +83,18 @@ Frontend
 │       └── cosmosService.js
 
 ## 🔗 API Endpoints
-➤ Upload Resume
+    ➤ Upload Resume
 
-POST
-  /api/resumes/upload
+     POST
+     /api/resumes/upload
 
 
-   Request Type: multipart/form-data
-   -Fields
-   -name
-   -email
-   -skills
-   -resume (file)
+     Request Type: multipart/form-data
+    -Fields
+    -name
+    -email
+    -skills
+     -resume (file)
 
 Response
      {
@@ -102,10 +102,11 @@ Response
         "url": "https://<azure-blob-url>"
      }
 
-➤ Get Uploaded Candidates
+## ➤ Get Uploaded Candidates
       /api/resumes/list
       [
   {
+  
     "id": "123456789",
     "name": "John Doe",
     "email": "john@example.com",
@@ -115,32 +116,29 @@ Response
   }
 ]
 
-➤ Health Check (Azure Requirement)
+## ➤ Health Check (Azure Requirement)
     /health
     OK
 
 ## 🔐 Environment Variables
      PORT=3000
 
-# Azure Blob Storage
-AZURE_STORAGE_CONNECTION_STRING=YOUR_CONNECTION_STRING=string
-AZURE_BLOB_CONTAINER=resumes
+## Azure Blob Storage
+    AZURE_STORAGE_CONNECTION_STRING=YOUR_CONNECTION_STRING=string
+    AZURE_BLOB_CONTAINER=resumes
 
-# Azure Cosmos DB
-COSMOS_ENDPOINT=YOUR_COSMOS_ENDPOINT
-
-COSMOS_KEY=YOUR_COSMOS_KEY
-
-COSMOS_DATABASE=ResumeDB
-
-COSMOS_CONTAINER=Candidates
+## Azure Cosmos DB
+    COSMOS_ENDPOINT=YOUR_COSMOS_ENDPOINT
+    COSMOS_KEY=YOUR_COSMOS_KEY
+    COSMOS_DATABASE=ResumeDB
+    COSMOS_CONTAINER=Candidates
 
 ## ▶️ How to Run This Project Locally
-Step 1: Install Dependencies
+     Step 1: Install Dependencies
         npm install
-Step 2: Start Server
+     Step 2: Start Server
         npm start
-Server will run at: http://localhost:3000
+    Server will run at: http://localhost:3000
 
 ## ☁️ Azure Deployment Details
        Platform: Azure App Service
