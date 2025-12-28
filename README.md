@@ -7,19 +7,21 @@
 ## 🧠 What This Project Does (Simple Explanation)
    
   -User uploads a resume through a frontend form
+  
   -Backend receives the file using Multer
+  
   -Resume file is uploaded to Azure Blob Storage
+  
   -Candidate details + resume URL are saved in Azure Cosmos DB
+  
   -Backend provides APIs to retrieve uploaded candidate data
 
  ## 🏗️ System Architecture
-   
-     
-  Frontend (HTML/CSS/JavaScript)
+ Frontend (HTML/CSS/JavaScript)
         |
         |  HTTP Requests
         |
-  Node.js Backend (Express)
+Node.js Backend (Express)
         |
         |---- Upload Resume → Azure Blob Storage
         |
@@ -28,12 +30,18 @@
         ↓
      JSON Response
 
+
 ## Features
    --Resume upload functionality
+   
    --Cloud file storage using Azure Blob Storage
+   
    --Candidate data storage using Azure Cosmos DB
+   
    --REST APIs for upload and listing resumes
+   
    --Azure health check endpoint
+   
    --Deployed on Azure App Service (Linux
 
 ## 🛠️ Tech Stack
